@@ -1,0 +1,201 @@
+THE AUTHORITY ON TECH
+
+What are you looking for?
+TAGS: Builds  Cases  Cooling  CPUs  Graphics  Laptops  Memory  Monitors  Motherboards  more 
+
+FORUMGRAPHICS CARDS
+What's The Best Way to Install New Video Drivers?
+
+pongrulesMar 26, 2007, 5:37 PM
+Can someone knowledgeable in this please provide a step-by-step process and mention the programs used? 
+
+Whenver I go to install new video drivers, I uninstall the old one through device manager and reboot. But when the machine reboots, Windows XP detects the new hardware and wants to start installing some drivers, so I keep telling it to cancel but it keeps fighting back and wanting to install another driver. Finally, I get it to stop but I'm not sure how far into the install XP got before I was able to stop this. Then I install the new driver, but I'm never confident it was a clean install, though I've never had any driver issues I'm aware of.
+
+There's got to be a better process. I know a few people who just install the new driver on top of the old driver, but I know that's not recommended.
+22 answers LAST REPLY Aug 6, 2012
+MORE ABOUT what install video drivers
+
+TUBMar 26, 2007, 9:31 PM
+Quote:
+Can someone knowledgeable in this please provide a step-by-step process and mention the programs used? 
+
+Whenver I go to install new video drivers, I uninstall the old one through device manager and reboot. But when the machine reboots, Windows XP detects the new hardware and wants to start installing some drivers, so I keep telling it to cancel but it keeps fighting back and wanting to install another driver. Finally, I get it to stop but I'm not sure how far into the install XP got before I was able to stop this. Then I install the new driver, but I'm never confident it was a clean install, though I've never had any driver issues I'm aware of.
+
+There's got to be a better process. I know a few people who just install the new driver on top of the old driver, but I know that's not recommended.
+
+
+You un-installed but did you clean out everything before you install the new one? If you do than it should be fine and always verify it after you install. Most driver version whether it's ATI or Nvidia usually provide it with a "Uninstall Utility" to clean out any previous driver(s) before you install any new one. But sometime they don't always work, so most of the time you have to manually remove it. Here's what you need to do:
+
+1) After you uninstall from the "Device Manager", sometime it will ask for you to reboot in order to complete the un-installation. Whether it prompted or not "DO NOT REBOOT" instead just cancel it. Now, go to STEP#2.
+
+2) Go into your GPU driver folder (Usually by default at C:\Program files\ATI or Nvidia) and delete the folder. Now reboot, and when window loads up and a new "Hardware Found" just cancel it. Goto STEP#3.
+
+3) Now, install the new drivers and follow the on-screen and than reboot when finish. When window loads up it should automatic load the new driver. But if not than you have to manually point it to the new GPU driver folder and it should load from there. If all fails than go to STEP#4.
+
+4) This maybe your last resort if STEP#1-3 fails. But 80-90% of the time STEP#1-3 should take care of any problem. 
+If not than you need to repeat STEP#1-2 and got into your "REGEDIT" and clean out any left over junk, before you can do STEP#3. CAUTIONS: "I DO NOT" recommend this step unless your totally confident and know exactly what your doing. It can really mess up your system and could end up re-installing windows. Good Luck! :wink: 
+
+
+Cheers! 8)
+pongrulesMar 26, 2007, 9:35 PM
+Thanks, TUB. I'll look for the utility on Nvidia's website. Some have also recommended the Driver Cleaner Pro utility, but it's third part, so I'm not sure how much I trust that.
+RELATED RESOURCES
+ What\'s The Best Way to Install New Video Drivers?
+ Help Uninstalling Video Drivers?
+ HD 6870 Crosfire cards; drivers don't install properly
+ "keyhook.exe" process installed by SIS 315 video card driver
+ Video Driver for Dell Latitude CP 650
+Can't find your answer ? Ask !
+
+How to ...
+GET THE ANSWER
+kaotaoMar 26, 2007, 9:42 PM
+It's a good tool, and can be trusted.
+blade85Mar 26, 2007, 10:18 PM
+i personally use driver cleaner pro, works great.
+
+I have an ATI card, so i follow the following steps (if you have nvidia, edit it accordingly):
+
+
+1- go to google, and search for driver cleaner pro (download and install but do not run)
+
+2- Keep the latest ATI drivers on your desktop aswell
+
+3- Make sure you have all the windows update (specially the .NET framework). Install it if you dont
+
+4- Just to be on the safe side download and keep the OMEGA drivers on your desktop
+
+5- Uninstall your current drivers like u did before
+
+6- reboot into safemode without any other application
+
+7- run driver cleaner pro and select ati and click run to remove all ati related files
+
+8- reboot into normal mode
+
+9- install or try to install the new ati drivers
+
+10- if that doesnt work, try the omega drivers by following steps 5-8 and changing 9 accordingly (select normal drivers, and untick multires) 
+
+
+and viola, should run nice and clean  :)
+pongrulesMar 26, 2007, 10:23 PM
+Thanks, Blade. Why safe mode before running the driver cleaner?
+fredgibletMar 26, 2007, 10:28 PM
+The absolute best way? Format and re-install ;)
+pongrulesMar 26, 2007, 10:34 PM
+LOL, "Best Way" being relative in this case. This would be most effective, not the best way.
+fredgibletMar 27, 2007, 12:13 AM
+Quote:
+LOL, "Best Way" being relative in this case. This would be most effective, not the best way.
+
+
+True.
+blade85Mar 27, 2007, 3:54 AM
+Quote:
+Thanks, Blade. Why safe mode before running the driver cleaner?
+
+
+reason for going into safe mode is simple. 
+
+When you go to safe mode, none of your original display drivers are being used. So unlike normal mode, where you wont be able to delete some of the more important files as they are being used in the display, in safe mode you use onboard display, so your free to delete all and any file related to the display drivers without any issues.
+slashzapperMar 27, 2007, 6:08 AM
+Quote:
+The absolute best way? Format and re-install ;)
+
+
+just to make the best way even better yet  :lol: throw your comp out the window and buy a new one :lol: see no problems now !!!
+
+any other issues  :lol:
+pongrulesMar 27, 2007, 3:14 PM
+ROTFLMAO!!!
+pongrulesMar 27, 2007, 3:14 PM
+Makes sense, thanks Blade!
+jamesgoddardMar 27, 2007, 3:52 PM
+If it's just an update for the same card, I just run setup.exe and install over the top, never had an issue
+pongrulesMar 27, 2007, 4:04 PM
+Yeah, I know people that do that and haven't had issues. Done it myself in the past and haven't had issues. But the vast majority of people, and the instructions themselves, tell you to blow away the old drivers first. Maybe it causes issues that aren't readily apparent?
+blade85Mar 27, 2007, 9:38 PM
+Quote:
+Makes sense, thanks Blade!
+
+
+no problem, best of luck with the clean up :wink:  :)
+xXDracoXxMar 27, 2007, 11:34 PM
+I've never had any problems simply running the executable and letting it overwrite the old files. Does anyone know any issues with this? I thought cleaning out old drivers before putting new ones was an old-school issue.
+chungdokwanMar 28, 2007, 12:38 AM
+I went from a N6600 to 7600Gt awhile back and only unistalled the drivers it didn't go well ran like crap crashed etc.
+pongrulesMar 28, 2007, 2:45 PM
+Yeah, that's kinda why I asked that question. In the past, all I've ever done was run the executable and everything seemed fine. But like I said, others here recommend removing everything first and the instructions that come with the new drivers tell you to do that as well.
+drewschultzsaysAug 5, 2010, 3:58 AM
+i want help on going from a bad ass ati card to a not bad ass nvidia card. ????
+drewschultzsaysAug 5, 2010, 4:04 AM
+so you should always use these driver cleaners you guys speak of?
+tjc1937Aug 6, 2012, 11:47 PM
+Latest driver up date has caused my PC to boot slower....Haven't rolled it back, yet.
+Thank You, ATI CCC.....memory hog.{ P.S. If you totally remove "old drivers" you have nothing to roll back to.}
+tjc1937Aug 6, 2012, 11:48 PM
+I thought P.C.'s were smart enough to know what they are doing. LOL LOL LOL
+ASK A NEW QUESTION
+
+Read More
+GRAPHICS CARDS DRIVERS VIDEO WINDOWS XP GRAPHICS
+Related Resources
+Making a video of opening new hardware boxes
+Free install windows xp sound device driver
+Installing my video driver again...
+Video card driver help?
+Video drivers
+Correct Graphics Card Upgrade Process
+Best process to replace nvidia with ati card?
+ATI HD 4800 Underperforming
+P4M800PRO-M V2.0. Does not recognize video in Device Manager
+Is it possible????!!!
+NVIDIA to ATI install process?
+8 mm to DVD process
+Question about the Installation Process for Windows 7 x64
+What exactly is the process to go from XP to Vista?
+MORE RESOURCES
+Ask the community
+
+Message title
+ 
+Ask your question
+ PUBLISH
+
+Top Experts - Graphics card
+
+SR-71 Blackbird
+SR-71 Blackbird
+101795 messages since
+8/17/09
+hang-the-9
+hang-the-9
+42451 messages since
+3/24/10
+maxalge
+maxalge
+9007 messages since
+5/30/12
+SCORES
+ALL BADGES
+FORUM HELP
+
+Tom's Hardware Around the World
+Tom's Hardware Around the World
+RUSSIA
+FRANCE
+GERMANY
+UK
+ITALY
+USA
+Subscribe to Tom's Hardware
+      
+Search the site
+
+  OK
+About Tom's Hardware
+ADVERTISING ABOUT US CONTACT PURCH PRIVACY POLICY TERMS OF USE COPYRIGHT POLICY
+Copyright © 2017 Purch Group, Inc. All Rights Reserved 
+Tom's Hardware Guide ™
+Ad choices
